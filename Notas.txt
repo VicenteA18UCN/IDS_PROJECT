@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------------------------------
+Quizas deberia llenarse con la mediana o el promedio
+# Llena los valores nulos en las columnas relevantes con cero
+merged_df['year'] = merged_df['year'].fillna(0)
+merged_df['reviewer_rating'] = merged_df['reviewer_rating'].fillna(0)
+
+merged_df['positivity_ratio'] = merged_df['positivity_ratio'].fillna(0)
+------------------------------------------------------------------------------------------------------------
+¿Porque no esta estimated owners en la matriz de correlacion?
+------------------------------------------------------------------------------------------------------------
+¿Porque no esta steam score en el grafico de correlacion?
+------------------------------------------------------------------------------------------------------------
+¿Agregar 'Estimated Owners' a la matriz de correlacion?
+------------------------------------------------------------------------------------------------------------
+Cambie la primera matriz de correlacion, por alguna razon no me funcionaba
+------------------------------------------------------------------------------------------------------------
+¿Porque se usa crop en vez de df en la matriz de correlacion y en un grafico de correlacion?
+------------------------------------------------------------------------------------------------------------
+Diria que es mejor no desplegar las predicciones, no tienen mucho sentido
+------------------------------------------------------------------------------------------------------------
+Ya no esta Steam score, ¿Como graficar los graficos? ¿Hay que graficar?
