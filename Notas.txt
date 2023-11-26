@@ -7,15 +7,26 @@ merged_df['reviewer_rating'] = merged_df['reviewer_rating'].fillna(0)
 merged_df['positivity_ratio'] = merged_df['positivity_ratio'].fillna(0)
 ------------------------------------------------------------------------------------------------------------
 ¿Porque no esta estimated owners en la matriz de correlacion?
+Porque la matriz de correlación intenta relacionar las variables que no sean estimated owners entre sí. La idea, es ver que variables estan fuertemente relacionadas una de otras
+con el sentido de encontrar una relación útil para predecir.
 ------------------------------------------------------------------------------------------------------------
 ¿Porque no esta steam score en el grafico de correlacion?
+Steam score, cuando lo puse, no aportaba datos importantes, de hecho, empeoraba el modelo. Sin embargo, fue hace rato, y podriamos reconsiderar ponerlo nuevamnete.
+Sin embargo, con tener positivo y negativo, se trabaja mucho mejor (ya que son variables relacionadas.)
 ------------------------------------------------------------------------------------------------------------
 ¿Agregar 'Estimated Owners' a la matriz de correlacion?
+No, por lo que mencione antes.
 ------------------------------------------------------------------------------------------------------------
 Cambie la primera matriz de correlacion, por alguna razon no me funcionaba
+Ok, esta bien. Creo que se porque puede ser.
 ------------------------------------------------------------------------------------------------------------
 ¿Porque se usa crop en vez de df en la matriz de correlacion y en un grafico de correlacion?
+En realidad, lo hago para ver que tan relacionadas son las variables, y para ver que la variables que inclui tienen sentido.
+Pasa que, si pongo todas las variables, van a haber casos que la matriz de correlacion se vea rara, o empeore la relacion entre las variables.
+(Sin embargo, estaria bien poner ambas, o en este caso, la tuya, con df.)
 ------------------------------------------------------------------------------------------------------------
 Diria que es mejor no desplegar las predicciones, no tienen mucho sentido
+De acuerdo.
 ------------------------------------------------------------------------------------------------------------
 Ya no esta Steam score, ¿Como graficar los graficos? ¿Hay que graficar?
+No esta Steam score, sin embargo recuerda, estamos probando un punto, cual de las dos es más util realmente. Además podriamos probar con algo que mencione positivo y negativo.
